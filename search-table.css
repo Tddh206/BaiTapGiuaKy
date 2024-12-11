@@ -1,0 +1,163 @@
+/* Tổng thể */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Tiêu đề */
+h1 {
+    text-align: center;
+    color: #fff;
+    background: #4285f4;
+    padding: 15px 0;
+    margin: 0;
+    font-size: 24px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Thanh tìm kiếm */
+.search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-container input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 5px;
+}
+
+.search-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Bảng */
+table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #4285f4;
+    color: #fff;
+}
+
+thead th {
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #e8f0fe;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Nút hành động */
+a[href*="delete.php"], a[href*="edit.php"] {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 4px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+a[href*="delete.php"] {
+    background-color: #e74c3c;
+}
+
+a[href*="delete.php"]:hover {
+    background-color: #c0392b;
+}
+
+a[href*="edit.php"] {
+    background-color: #27ae60;
+}
+
+a[href*="edit.php"]:hover {
+    background-color: #229954;
+}
+
+/* Nút thêm sinh viên */
+button.add-student {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4285f4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.add-student:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    table {
+        width: 95%;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .search-container input[type="text"] {
+        width: 80%;
+    }
+
+    .search-container button {
+        width: auto;
+    }
+
+    button.add-student {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+
